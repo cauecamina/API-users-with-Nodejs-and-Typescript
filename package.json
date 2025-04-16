@@ -6,6 +6,9 @@
   "author": "Caue",
   "license": "MIT",
   "private": false,
+  "scripts":{
+    "start": "yarn ts-node-dev ./src/index.ts"
+  },
   "dependencies": {
     "express": "^5.1.0"
   },

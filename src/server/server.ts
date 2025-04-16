@@ -1,15 +1,9 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
+import { router } from './routes'
 
 const server = express();
 
+server.use(router);
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type, @typescript-eslint/no-unused-vars
-interface Teste {
-    
-}
-
-server.get('/', (req: Request, res: Response) => {
-  res.send('Olá Dev');
-});
 
 export { server };
