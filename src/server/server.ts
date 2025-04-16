@@ -3,6 +3,7 @@ import { router } from './routes'
 
 const server = express();
 
+server: server.use(express.json());
 server.use(router);
 
 

@@ -7,11 +7,12 @@ router.get('/get', (req: Request, res: Response) => {
 });
 
 router.post('/post', (req: Request, res: Response) => {
-  res.send('Teste POST');
+  console.log(req.body)
+  res.send(req.body);
 });
 
 router.put('/put', (req: Request, res: Response) => {
-  res.send('Teste PUT');
+  res.json('Teste PUT');
 });
 
 
