@@ -4,7 +4,7 @@ import {StatusCodes} from 'http-status-codes';
 const router = Router();
 
 router.get('/get', (req: Request, res: Response) => {
-  res.send('Teste GET');
+  res.send('"teste": "Teste GET"');
 });
 
 router.post('/post', (req: Request, res: Response) => {
@@ -13,12 +13,12 @@ router.post('/post', (req: Request, res: Response) => {
 });
 
 router.put('/put', (req: Request, res: Response) => {
-  res.json('Teste PUT');
+  res.send('"teste": "Teste ´PUT"');
 });
 
 
 router.delete('/delete', (req: Request, res: Response) => {
-  res.send('Teste DELETE');
+  res.send('"teste": "Teste DELETE"');
 });
 
 
